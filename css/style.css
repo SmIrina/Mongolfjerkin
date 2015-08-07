@@ -1,0 +1,705 @@
+/* Модульная сетка */
+
+.row:after,
+.row:before {
+  content: "";
+  display: table;
+}
+
+.row:after {
+  clear: both;
+}
+
+.col {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 18px;
+  min-height: 1px;
+}
+
+.s-1 { width: 8.33%; }
+.s-2 { width: 16.66%; }
+.s-3 { width: 25%; }
+.s-4 { width: 33.33%; }
+.s-5 { width: 41.66%; }
+.s-6 { width: 50%; }
+.s-7 { width: 58.33%; }
+.s-8 { width: 66.66%; }
+.s-9 { width: 75%; }
+.s-10 { width: 83.11%; }
+.s-11 { width: 91.66%; }
+.s-12 { width: 100%; }
+.s-20 { width: 20%; }
+
+.to-right {
+  float: right;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'Roboto', sans-serif;
+  color: #444444;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.second-title {
+  font-size: 32px;
+  line-height: 36px;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 24px;
+  margin-bottom: 44px;
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.second-title:after {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 60px;
+  left: 0;
+  bottom: 0;
+  background-color: #3e98d7;
+}
+
+.second-title-center:after  {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.second-title-center {
+  text-align: center;
+}
+
+/* container */
+
+.container {
+  width: 1200px;
+  margin:0 auto;
+}
+
+/* nav row */
+
+.nav-row {
+  padding: 15px 0;
+  background: #2c2c2c;
+  color:  #fff;
+}
+
+.logo{
+ font-size: 22px;
+ line-height: auto;
+ color: white;
+ font-weight: 500;
+ line-height: 34px;
+}
+
+.main-nav {
+  text-align: right;
+  font-size:  0;  
+}
+
+.main-nav_item {
+  display: inline-block;  
+  vertical-align: top;
+  color:  #fff;
+  font-size:  18px;
+  line-height: 22px;
+  text-decoration: none;
+  margin-left: 10px;  
+  padding: 5px 10px;
+  border: 1px solid transparent;  
+}
+
+.main-nav_item:hover, 
+.main-nav_item-active {
+  border: 1px solid #fff;
+}
+
+
+/* промо блок */
+
+.promo-block {
+  padding: 170px 0 95px 0;
+  background: #a8c5ed;
+  text-align: center; 
+  color:  #fff;
+  background-image: url(../aerostat1200_simple-assets/balloons_big-screen.jpeg);
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center top;
+  text-align: center;
+  color: white;
+}
+
+.btn-more {
+  line-height: 22px;
+  color: white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border: 1px solid white;
+  background: transparent;
+  position: relative;
+}
+
+.btn-more:after {
+  position: absolute;
+  content: "";
+  display: block;
+  background: url(../aerostat1200_simple-assets/arrow.png);
+  background-repeat: no-repeat;
+  width: 18px;
+  height: 30px;
+  top: 80px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.promo-block .btn {
+  margin-top: 170px;
+}
+
+.promo-block_title {
+  margin: 0;
+  font-size:  66px;
+  line-height: 70px;
+  font-weight: 500;
+  margin: 0 auto;
+  width: 750px;
+}
+
+
+/* features */
+
+.features {
+  padding:  60px 0 80px;
+}
+
+     
+.features-item {
+  padding-left: 80px;
+  width: 130px;
+  position: relative;
+}
+
+
+.features-item:before {
+  position: absolute;
+  content: "";
+  background-image: url(../img/aerostat1200_simple-assets/red_thumb-up.png);
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+}
+
+.features-item_rel:before {
+  background-image: url(../img/aerostat1200_simple-assets/red_thumb-up.png);
+  width: 56px;
+  height: 58px;
+  top: -10px;
+}
+
+.features-item_learn:before {
+  background-image: url(../img/aerostat1200_simple-assets/red_sunglasses.png);
+  width: 75px;
+  height: 28px;
+  top: 5px;
+}
+
+.features-item_photo:before {
+  background-image: url(../img/aerostat1200_simple-assets/red_camera.png);
+  width: 65px;
+  height: 50px;
+  top: 5px;
+}
+
+.features-item_view:before {
+  background-image: url(../img/aerostat1200_simple-assets/red_binokle.png);
+  width: 72px;
+  height: 34px;
+} 
+
+
+/*about */
+
+.about {
+  padding-bottom: 120px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-video {
+  width: 750px;
+  height: 345px;
+  background: #586f5f;
+  box-shadow: -10px
+}
+
+/* слайдер */
+
+.gallery {
+  padding: 90px 0;
+  text-align: center;
+}
+
+.slider {
+  width: 1135px;
+  position: relative;
+  text-align: center;
+}
+
+.square{
+  width: 260px;
+  height: 260px;
+  text-align: center;
+  line-height: 260px;
+  background-color: #ccc;
+}
+
+.square_trigger{
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-color: green;
+}
+
+.square_trigger--bg-red{
+  background-color: red;
+}
+
+.slider_item {
+  /*margin: 10px;*/
+}
+
+/* about fly */
+
+.about-fly {
+  background: #fff url(../img/aerostat1200_simple-assets/bgi-how.jpeg) no-repeat center bottom;
+}
+
+.about-fly_process {
+  position: relative;
+  min-height: 500px;
+  margin-bottom: 130px;
+  background-image: url(../aerostat1200_simple-assets/Path.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.balloon {
+  width: 110px;
+  position: absolute;
+  text-align: center;
+}
+
+.balloon-title {
+  font-size: 18px;
+  line-height: 28px;
+  color: #454545;
+  margin-bottom: 10px;
+}
+
+.balloon-image {
+  background-color: #e45c5c;
+  background: #fff url(../img/aerostat1200_simple-assets/red_balloon.png);
+  width: 44px;
+  height: 65px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 10px;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  vertical-align: top;
+  background-position: -48 -10px;
+}
+
+.balloon-1 {
+  top: 240px;
+  left: 30px;
+}
+
+.balloon-2 {
+  top: 160px;
+  left: 288px;
+}
+
+.balloon-3 {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.balloon-4 {
+  top: 160px;
+  right: 288px;
+}
+
+.balloon-5 {
+  top: 240px;
+  right: 30px;
+}
+
+.about-fly_bottom {
+  padding: 30px 0;
+  background: #f2f2f2;
+  text-align: left;
+  color: #26668e;
+  font-size: 32px;
+  line-height: 34px;
+}
+
+.counter {
+  text-align: right;
+}
+
+.counter-item {
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+  margin-right: 20px;
+}
+
+.counter_item:first-child {
+  margin-left: 0;
+
+}
+
+.time {
+  font-size: 22px;
+}
+
+.payment {
+  padding: 80px 0;
+  margin-bottom: 80px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* faq, payment*/
+
+
+.payment-how {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.payment-how_title {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.cash {
+  margin-bottom: 20px;
+}
+
+.faq-item_title {
+  font-weight: bold;
+  margin: 20px 0 20px 60px;
+  position: relative;
+}
+
+.faq-item_title:before {
+  content: "";
+  background-image: url(../img/aerostat1200_simple-assets/blue_question.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 35px;
+  width: 45px;
+  left: -55px;
+}
+
+.faq-item_content {
+  font-size: 16px;
+  margin-left: 80px;
+}
+
+/* форма */
+
+.payment_form .row {
+  margin-bottom: 20px;
+}
+
+.payment_form label {
+  font-size: 18px;
+  line-height: 24px;
+  color: #444;
+  display: block;
+
+}
+
+.payment_form .col {
+  padding: 0 3px;
+}
+
+input[type="text"],
+select {
+  display: block;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="text"]:focus,
+select:focus {
+  border: 2px solid #aed6ff;
+}
+
+input[type="text"]{
+  padding-left: 7px 10px 10px 40px;
+  background-position: 10px center;
+  background-repeat: no-repeat;
+}
+
+input[type="text"]:focus {
+  padding-left: 6px 9px 9px 39px;
+}
+
+.input_user {
+  background-image: url(../aerostat1200_simple-assets/name.png);
+}
+
+.input_phone {
+  background-image: url(../aerostat1200_simple-assets/call.png);
+}
+
+.payment_sum {
+  font-weight: 800px;
+  line-height: 36px;
+}
+
+.payment_value {
+  font-size: 36px;
+  font-weight: bold;
+  color: #f97e7e;
+  font-style: normal;
+}
+
+.payment_sum span {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.btn-blue {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  padding: 8px 40px;
+  border-radius: 5px;
+  background: #46b0dc;
+  border: none;
+  outline: none;
+}
+
+.btn-blue:hover {
+  opacity: .8;
+}
+
+ /*   статистика */
+
+ .statistic {
+  padding: 60px 0;
+  background: #5b757d url(../img/aerostat1200_simple-assets/bgi_numbers.jpeg) no-repeat center bottom;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  margin-top: 60px;
+ }
+
+ .statistic-item_number {
+  display: inline-block;
+  width: 160px;
+  height: 160px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 6px solid white;
+  font-size: 42px;
+  line-height: 145px;
+  margin-bottom: 20px;
+ }
+
+ .statistic-item_title {
+  
+ }
+
+ .statistic-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 230px;
+  text-align: center;
+ }
+
+ /* команда */
+ .team {
+  padding: 90px 0 280px;
+  text-align: center;
+
+ } 
+
+ .team-item_image {
+  background-color: #474747;
+  background-image: url(../img/aerostat1200_simple-assets/act_pilot.png);
+  background-repeat: no-repeat;
+  text-align: center;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  cursor: pointer;
+ }
+
+ .team-item_image img {
+  transition: opacity .3s;
+  opacity: 1;
+ }
+
+.team-item_image img:hover{
+  transition: opacity .3s;
+  opacity: 0;
+}
+
+ .feedback-item {
+  display: inline-block;
+  width: 455px;
+  margin-bottom: 100px;
+ }
+
+ /* контакты */
+
+ .contacts {
+  padding: 140px 0 65px;
+  background: url(../img/aerostat1200_simple-assets/bgi-contacts.jpeg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+    background-size: cover;  
+ }
+
+ .contacts_title {
+  text-align: center;
+  margin: 0 auto 50px;
+  width: 430px;
+  position: relative;
+  font-size: 18px;
+ }
+
+ .contacts_title span {
+  font-size: 26px;
+ }
+
+ .contacts_title:before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #337ba0 url(../img/aerostat1200_simple-assets/plane.png) no-repeat center center;
+  position: absolute;
+  left: 180px; 
+  top: -80px;
+  border-radius: 5px;
+ }
+
+  .address div{
+    margin: 10px;
+  }
+
+ .address_title {
+  font-size: 22px;
+  font-weight: bold;
+ }
+
+ .address_text {
+  font-size: 20px;
+  color: #616161;
+ }
+
+ .address_phone {
+  font-size: 26px;
+  font-weight: bold;
+ }
+
+ .address {
+  margin-left: 40px;
+  position: relative;
+ }
+
+ .address:before {
+  content: "";
+  background: url(../img/aerostat1200_simple-assets/tag.png) no-repeat center center;
+  display: block;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  left: -50px;
+  top: 5px;
+ }
+
+ .email {
+  text-decoration: none;
+  font-size: 22px;
+  position: relative;
+  margin: 20px;
+  padding: 20px;
+  color: gray;
+  font-weight: normal;
+ }
+
+ .email:before {
+  content: "";
+  background: url(../img/aerostat1200_simple-assets/mail.png) no-repeat center center;
+  display: block;
+  position: absolute;
+  left: -20px;
+  height: 20px;
+  width: 20px;
+ }
+
+ .social {
+  margin-top: 30px;
+  
+ }
+
+
